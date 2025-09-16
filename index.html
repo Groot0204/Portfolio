@@ -1,0 +1,137 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rupesh — Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="site-header">
+        <div class="brand">
+            <div class="logo">R</div>
+            <h1>Rupesh</h1>
+        </div>
+
+        <nav class="nav-hidden">
+            <a href="#hero">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/Groot0204" target="_blank">GitHub</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger" onclick="toggleDrawer()" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="mobile-drawer" id="drawer" style="display:none">
+            <a href="#hero" onclick="closeDrawer()">Home</a>
+            <a href="#projects" onclick="closeDrawer()">Projects</a>
+            <a href="#skills" onclick="closeDrawer()">Skills</a>
+            <a href="#contact" onclick="closeDrawer()">Contact</a>
+            <a href="https://github.com/Groot0204" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-inner container">
+                <span class="eyebrow">Hello, I'm</span>
+                <h2>Rupesh — <span class="typed">Developer & Problem Solver</span></h2>
+                <p>I build web apps, CLIs, and dashboards using <strong>Python</strong>, <strong>Flask</strong>, and
+                    clean front-end interfaces. I like automating tasks and turning data into useful tools.</p>
+                <div class="cta">
+                    <button class="btn"
+                        onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire
+                        me</button>
+                    <button class="btn alt" onclick="window.open('https://github.com/Groot0204','_blank')">View
+                        GitHub</button>
+                </div>
+            </div>
+
+            <aside class="hero-preview">
+                <img class="preview-img" src="https://via.placeholder.com/800x600?text=Project+Preview" alt="Preview">
+                <div class="preview-meta">
+                    <div>Open to internships</div>
+                    <div>Based in India</div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h3 class="section-title">Selected Projects</h3>
+                <div class="projects-grid">
+                    <article class="project fade">
+                        <img src="https://via.placeholder.com/800x400?text=Login+UI" alt="Modern Login Page">
+                        <h4>Modern Login Page</h4>
+                        <p>Create a polished responsive login UI with password toggle and accessibility focus.</p>
+                        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                                class="tag">Accessibility</span></div>
+                    </article>
+
+                    <article class="project fade">
+                        <img src="https://via.placeholder.com/800x400?text=Pexels+App" alt="Pexels Image Search">
+                        <h4>Pexels Image Search App</h4>
+                        <p>Flask app that searches images via Pexels, previews results, and saves selections to CSV.</p>
+                        <div class="tags"><span class="tag">Flask</span><span class="tag">API</span><span
+                                class="tag">CSV</span></div>
+                    </article>
+
+                    <article class="project fade">
+                        <img src="https://via.placeholder.com/800x400?text=Sales+Dashboard" alt="Sales Dashboard">
+                        <h4>Sales Dashboard</h4>
+                        <p>Interactive dashboard with Matplotlib charts, CSV upload and data filters for insights.</p>
+                        <div class="tags"><span class="tag">Python</span><span class="tag">Matplotlib</span><span
+                                class="tag">Flask</span></div>
+                    </article>
+
+                    <article class="project fade">
+                        <img src="https://via.placeholder.com/800x400?text=Weather+CLI" alt="Weather CLI">
+                        <h4>CLI Weather Info Fetcher</h4>
+                        <p>Command-line tool to fetch weather, add emojis, and save reports—also extended to a web
+                            version.</p>
+                        <div class="tags"><span class="tag">CLI</span><span class="tag">API</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h3 class="section-title">Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill fade">Python</div>
+                    <div class="skill fade">Flask / FastAPI</div>
+                    <div class="skill fade">HTML / CSS / JS</div>
+                    <div class="skill fade">Git & GitHub</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h3 class="section-title">Contact</h3>
+                <div class="contact-card fade">
+                    <form id="contact-form">
+                        <div class="field"><input name="name" placeholder="Your name" required></div>
+                        <div class="field"><input name="email" type="email" placeholder="Email" required></div>
+                        <div class="field"><textarea name="msg" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="send"><button type="submit" class="btn">Send Message</button></div>
+                    </form>
+                    <p id="success-msg" style="color:green; display:none; margin-top:10px;">Message sent successfully!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>&copy; 2025 Rupesh. All rights reserved.</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
