@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Rupesh Patil's Portfolio - Python & Web Developer",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "dev": "python -m http.server 8000",
+    "build": "echo \"Static site - no build needed\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Groot0204/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "python",
+    "web-developer",
+    "vercel"
+  ],
+  "author": "Rupesh Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Groot0204/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Groot0204/Portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
